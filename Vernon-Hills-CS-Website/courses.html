@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VHHS CS Club - Courses</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url(grad.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            background-color: #A7C7E7; /* Same blue as the home page */
+            padding: 10px 0;
+        }
+        header a {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        header nav {
+            float: right;
+            margin-right: 20px;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+        .courses-list {
+            list-style: none;
+            padding: 0;
+        }
+        .courses-list li {
+            margin: 20px 0;
+        }
+        .courses-list a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .course-description {
+            font-size: 0.9em;
+            margin: 5px 0 0 0;
+            color: #ccc;
+        }
+        footer {
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="VHnew.png" alt="CS Club" class="header-image">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">CS Club</a></li>
+                <li><a href="girlswhocode.html">Girls Who Code</a></li>
+                <li><a href="Xperience.html">Xperience</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="exec.html">Exec Board</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Our Courses</h1>
+        <ul class="courses-list">
+            <li>
+                <a href="cs_principles.html">AP Computer Science Principles</a>
+                <p class="course-description">Advanced Placement Computer Science Principles is a college level course designed to introduce an understanding of how computers can be used in any field and how to solve real world problems using the computer. Students will use JavaScript to create their own web apps. With a unique focus on creative problem solving and real-world applications, AP Computer Science Principles prepares students for college and career.</p>
+            </li>
+            <li>
+                <a href="cs_a.html">AP Computer Science A</a>
+                <p class="course-description">Advanced Placement Computer Science A (JAVA) is a college level course whose topics are prescribed by the College Board. The course covers materials that would normally comprise three or more hours of college level computer science course work. Topics include object-oriented programming, methodology, inheritance, classes, case study analysis, array processing, data types, iteration, and selection. Students are expected to attain mastery of fundamental programming techniques. Students who successfully complete the course and AP examination may receive credit and/or advanced placement for a one-semester college computer science course.</p>
+            </li>
+            <li>
+                <a href="cs_advanced.html">Advanced Topics in Computer Science</a>
+                <p class="course-description">Advanced Topics in Computer Science is designed for the student who wants to pursue the further study of advanced computer science topics. Students may choose to complete a course in data structures (equivalent to a typical college second semester computer science course). Or, students can work directly with the instructor to design an approved individualized course of study of the student’s choosing, which could include bringing technology products to authentic users and/or the marketplace. Students who take this course must be self-motivated to be able to consistently work independently on a significantly challenging topic that is of interest to them. This course will be a blended instructional model course. Blended instruction allows a student to learn through a mix of in-class and online instruction with some flexibility over time, place, and/or pace. With instructor approval, students may complete the course more than one time.</p>
+            </li>
+            <li>
+                <a href="cs_honors.html">Computer Science Honors</a>
+                <p class="course-description">Computer Science Honors (Python) is a course for students with little or no prior programming experience. This one-semester course teaches computational concepts and basic programming techniques. Students will develop confidence in their ability to apply computational practices to problems in a visual and interactive environment. This course uses the Python programming language in conjunction with tools designed to optimize student learning and engagement. The student will receive a firm foundation of computer programming needed to take either of the Advanced Placement Computer Science courses.</p>
+            </li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>Contact: <a href="mailto:adam.lueken@d128.org">adam.lueken@d128.org</a> (TA), <a href="mailto:example@gmail.com">example@gmail.com</a> (President)</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #fcfcfc;
+}
+
+header {
+  background: #B0C4DE; /* Desaturated */
+  color: #fff;
+  text-align: center;
+  border-bottom: 5px solid #fff; /* White border */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+header .header-image {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header .header-image:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+header .home-caption {
+  font-size: 0.75rem;
+  color: #fff;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  margin: 0 1rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+nav ul li a:hover {
+  background: #A2B9C9; /* Desaturated */
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(162, 185, 201, 0.8); /* Lighter glow effect */
+  transform: scale(1.1); /* Magnifying effect */
+}
+
+#main-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+  background-image: linear-gradient(270deg, #6A6AD9, #f6cdfe); /* Desaturated */
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+  color: #fff;
+  padding: 0 20px;
+}
+
+#main-content .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+.text-container {
+  text-align: center;
+  flex: 1;
+  margin-right: 2rem;
+}
+
+.text-container h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.text-container .button {
+  display: inline-block;
+  margin-top: 1.5rem;
+  background: #B0C4DE;
+  color: #fff;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.text-container .button:hover {
+  background: #A2B9C9;
+  box-shadow: 0 4px 8px rgba(162, 185, 201, 0.8);
+  transform: scale(1.1);
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 600px;
+}
+
+.carousel {
+  width: 80%;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  max-height: 400px;
+}
+
+#events-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80vh;
+  background: #B0C4DE;
+  color: #ffffff;
+  padding: 2rem 20px;
+}
+
+.events-content {
+  text-align: center;
+  width: 100%;
+}
+
+.events-content h2 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+  color: #fff;
+}
+
+.events-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+}
+
+.event-item {
+  text-align: center;
+  margin: 0 2rem;
+}
+
+.event-item img {
+  width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 10px;
+}
+
+event-item p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.button {
+  background: #B0C4DE;
+  color: #333;
+  padding: 0.8rem 1.5rem;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s, box-shadow 0.3s, transform 0.3s;
+}
+
+.button:hover {
+  background: #A2B9C9;
+  box-shadow: 0 4px 8px rgba(162, 185, 201, 0.8);
+  transform: scale(1.1);
+}
+
+footer {
+  background: #B0C4DE;
+  color: #ffffff;
+  text-align: center;
+  padding: 1rem 0;
+  border-top: 5px solid #fff;
+}
+
+.carousel img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* Forces square images */
+  object-fit: cover; /* Ensures images maintain a square shape */
+}
+
+@keyframes fadeIn {
+  to {
+      opacity: 1;
+  }
+}
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.about-page {
+  color: #0056b3;
+}
+
+.about-page .container {
+  color: #0056b3;
+}
