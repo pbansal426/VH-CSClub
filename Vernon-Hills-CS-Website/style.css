@@ -72,7 +72,7 @@ nav ul li a:hover {
   align-items: center;
   justify-content: center;
   height: 80vh;
-  background-image: linear-gradient(270deg, #6A6AD9, #f6cdfe); /* Desaturated */
+  background-image: linear-gradient(270deg, #0059a2, #bfc4c8); /* Desaturated */
   background-size: 400% 400%;
   animation: gradientBG 15s ease infinite;
   color: #fff;
