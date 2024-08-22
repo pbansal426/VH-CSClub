@@ -3,11 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VHHS CS Club - Contact</title>
+    <title>VHHS CS Club - About</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+            background-image: url(grad.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: white;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        header, footer {
+            background-color: #A7C7E7; /* Same blue as the home page */
+            padding: 10px 0;
+        }
+        header a {
+            display: inline-block;
+            margin-left: 20px;
+        }
+        header nav {
+            float: right;
+            margin-right: 20px;
+        }
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        header nav ul li {
+            display: inline;
+            margin-left: 20px;
+        }
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .container {
+            flex: 1;
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.4);
+            border-radius: 10px;
+        }
+        .courses-list {
+            list-style: none;
+            padding: 0;
+        }
+        .courses-list li {
+            margin: 20px 0;
+        }
+        .courses-list a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.2em;
+        }
+        .course-description {
+            font-size: 0.9em;
+            margin: 5px 0 0 0;
+            color: #ccc;
+        }
+        footer {
+            text-align: center;
+        }
+        footer a {
+            color: white;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -27,33 +103,25 @@
             </ul>
         </nav>
       </header>
-    
+
     <div class="container">
         <h1>Welcome to VHHS CS Club</h1>
-        <p>Insert your CS club information here.</p>
-        <p>You can include details about meetings, activities, members, projects, etc.
-        Computer Science Club
-        When: Every other Wednesday after school.
-        Where: Online. Join the Google classroom with code: sf7etvl
-
-        Club Activities
-        Innovation Fair: Students showcase their innovative ideas to solve real world problems.
-
-        Cybersecurity: Learn about the importance of cybersecurity and the technologies and methods used in this field.
-
-        Women Who Code: A program to get more women interested in computer science and other STEM fields.
-
-        XPerience: A new program to give students real world experience in several fields
-
-        Contact Mr. Lueken if you have any questions: E-Mail
+        <ul class="courses-list">
+            <li>
+                <a href="cs_principles.html">AP Computer Science Principles</a>
+                <p class="course-description">You can include details about meetings, activities, members, projects, etc.
+                    Computer Science Club. When: Every other Wednesday after school. Where: Online. Join the Google classroom with code: sf7etvl. Club Activities Innovation Fair: Students showcase their innovative ideas to solve real world problems. Cybersecurity: Learn about the importance of cybersecurity and the technologies and methods used in this field. Women Who Code: A program to get more women interested in computer science and other STEM fields. XPerience: A new program to give students real world experience in several fields Contact Mr. Lueken if you have any questions: E-Mail
             </p>
-    </div>
+        </li>
+    </ul>
+</div>
 
-    <footer class="footer">
-        <!-- Footer content -->
-        <p>&copy; 2024 VHHS CS Club. All rights reserved.</p>
+    <footer>
+        <p>Contact: <a href="mailto:adam.lueken@d128.org">adam.lueken@d128.org</a> (TA), <a href="mailto:example@gmail.com">example@gmail.com</a> (President)</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
-
-
