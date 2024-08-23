@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h3 style="color: #00bcd4;">Contact Us</h3> <!-- Accent color for heading -->
+    <form action="YOUR_FORM_PROCESSING_URL" method="POST"> <!-- Replace YOUR_FORM_PROCESSING_URL with your server-side script URL -->
+        <div class="form-group">
+            <label for="name" style="color: #ffffff;">Name:</label>
+            <input type="text" class="form-control" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+            <label for="email" style="color: #ffffff;">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+            <label for="subject" style="color: #ffffff;">Subject:</label>
+            <input type="text" class="form-control" id="subject" name="subject" required>
+        </div>
+        <div class="form-group">
+            <label for="message" style="color: #ffffff;">Message:</label>
+            <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+<style>
+    body {
+        background-color: #121212; /* Dark background */
+        color: #ffffff; /* Light text color */
+    }
+    .container {
+        background-color: #1f1f1f; /* Darker background for the form */
+        padding: 20px;
+        border-radius: 5px;
+        margin-top: 20px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    }
+    .form-control {
+        background-color: #2a2a2a; /* Dark background for inputs */
+        color: #ffffff; /* Light text color for inputs */
+        border: 1px solid #00bcd4; /* Accent border color */
+    }
+    .form-control:focus {
+        background-color: #333333; /* Darker background on focus */
+        border-color: #00bcd4; /* Accent border color on focus */
+        box-shadow: 0 0 5px rgba(0, 188, 212, 0.5); /* Highlight effect */
+    }
+    .btn-primary {
+        background-color: #00bcd4; /* Accent color for button */
+        border: none; /* Remove border */
+    }
+    .btn-primary:hover {
+        background-color: #0097a7; /* Darker shade on hover */
+    }
+</style>
+
+
+
+
+{% endblock %}
