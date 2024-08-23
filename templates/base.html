@@ -52,6 +52,14 @@
             width: 100vw; /* Set width to 100% of the viewport width */
             border: none; /* Remove default border */
         }
+        .card-img-top {
+        object-fit: cover; /* Adjust this value as needed */
+}
+.card {
+  margin-bottom: 10px;
+}
+
+
     </style>
 </head>
 <body>
@@ -59,7 +67,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark"> <!-- Updated classes for dark theme -->
         <a class="navbar-brand" href="/">
-            <img src="{{url_for('static', filename='/Image/VHnew.png')}}" alt="Logo" width="55" height="50"> <!-- Logo width changed to 55 -->
+            <img src="{{url_for('static', filename='Image/VHnew.png')}}" alt="Logo" width="47" height="50"> <!-- Logo width changed to 55 -->
         </a>
         <a class="navbar-brand" href="/">VHHS Computer Science</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

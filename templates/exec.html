@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us{% endblock %}
+
+{% block content %}
+
+<body>
+    <header class="bg-dark text-white text-center py-5">
+        <h2 class="display-4">Executive Board</h1>
+        <p class="lead">Vernon Hills CS-Club</p>
+    </header>
+
+    <main class="container mt-5">
+        <section class="executive-board">
+            <h2>Executive Board</h2>
+            <br>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <img src="{{url_for('static', filename='Image/zoe.jpg')}}" class="card-img-top" alt="Member 1">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark"><strong>President</strong>: Zoe Mehta</h5>
+                            <p class="card-text text-dark">im the President</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission-vision">
+            <h2>Mission and Vision</h2>
+            <p>Our mission...</p>
+            <p>Our vision...</p>
+        </section>
+
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <ul>
+                <li>Event 1</li>
+                <li>Event 2</li>
+            </ul>
+        </section>
+
+        <section class="join-us">
+            <h2>Join Us</h2>
+            <p>Become a member...</p>
+            <a href="#" class="btn btn-primary">Join Now</a>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white text-center py-3">
+        &copy; 2023 Futuristic Club
+    </footer>
+</body>
+</html>
+     
+
+    
+{% endblock %}
